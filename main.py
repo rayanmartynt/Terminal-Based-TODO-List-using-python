@@ -20,7 +20,7 @@ def add_task():
 
 # Function 3: Remove task
 def remove_task():
-    if len(tsks) > 0:
+    if len(tasks) > 0:
         number = int(input("Enter the number of the task you want to remove:"))
         if 1 <= number <= len(tasks):
             removed = tasks.pop(number - 1)
