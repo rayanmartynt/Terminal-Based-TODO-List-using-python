@@ -10,3 +10,9 @@ def show_task():
     else:
         for i in range(len(tasks)):
             print(f"{i + 1}.  {tasks[i]}")
+
+def add_task():
+    task = input("Enter a new task.")
+    tasks.append(task)
+    print("Task added successfully.")
+    show_task()
